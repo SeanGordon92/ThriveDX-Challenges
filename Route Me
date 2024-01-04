@@ -1,0 +1,29 @@
+Challenge Description:
+Recent reports regarding delays in food container production of the "Plastic & Elastic" company led to several changes in the company's network topology.
+The topology modification included new networking devices and permissions modifications.
+As the company's security specialist, you were requested to verify that the new topology and hierarchy were established securely.
+When considering the various cases, your main concern was a compromise of the main router in the network.
+
+Your goals
+☛ To perform the security evaluation without interrupting the production process, you were provided with an exact replica of the network, and access to 'R2', using the user and password 'Smith:DawaYk'.
+☛ Find a way to compromise the router and access the Global Configuration Mode.
+☛ Modify the router's configurations to enable access to the web server in the management network from the "tapdb-backup' Server.
+☛ Verify the web interface of 'websrv-internal' can be accessed from 'tapdb-backup'.
+
+Process:
+Go to 'R2'. In the CLI press enter. Enter the user and password as seen above.
+To gain password for 'enable' options, type 'show running-config'.
+Take "080A4D42003B041B1B" and run it through 'https://packetlife.net/toolbox/type7/' to get the reversed password which is "KaliBali".
+
+Execute 'show ip interface brief'.
+Enter the config mode by executing 'config t' and then the following commands:
+'interface gigabitEthernet 0/1'
+'no shutdown'
+
+Return to the main Cicso layout window, and enter the Server-PT.
+Go into 'Desktop' tab and click 'web browser'.
+In the URL enter the IP 192.168.1.5.
+
+You will be presented with a coupon with the flag inside of it.
+
+
