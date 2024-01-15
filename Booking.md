@@ -1,6 +1,6 @@
-NOTE: The challenge is a bit buggy and will produce the final flag some times, and in other times you will have to repeat the cookie manipulation part multiple times
-
-Challenge Description:
+#### NOTE: The challenge is a bit buggy and will produce the final flag some times, and in other times you will have to repeat the cookie manipulation part multiple times
+# Booking
+## Challenge Description:
 On your last vacation day in the "Wild Moose Hostel", the hostel's manager heard you discussing your full-time job as a penetration tester with other guests.
 She offered you to stay an additional night, free of charge, in exchange for assistance regarding a suspicion they have based on a security issue.
 According to her, they noticed several logins to their admin accounts at late hours, which none of the actual admins could confirm as valid.
@@ -11,7 +11,7 @@ Your goals
 ☛ Gain access to the hostel's admin panel.
 
 
-Process:
+## Process:
 Create an account. The credentials don't matter all that much, just remember them.
 After creating an account, sign in and go to 'My Moose'.
 Scroll down to the 'Contact Us' section.
