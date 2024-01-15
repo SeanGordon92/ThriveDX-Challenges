@@ -1,14 +1,16 @@
-Challenge Description:
+# Breaking Hollywood
+## Challenge Description:
 A few days back, you had an argument with your friend Hernandez about password complexity.
 He claimed you would never guess his strong passwords! As a
 challenge, he had set up an SSH server and secured it with one of his default passwords.
+
 Your goals
 ☛ You were provided with the user and password 'corey:TcPZ2rrS!' to reconnect if needed.
 ☛ Create a custom wordlist to use against the accessible SSH service.
 ☛ Execute a brute-force attack against the SSH service.
 ☛ Retrieve Hernandez's password, and attempt to log in into the server
 
-Process:
+## Process:
 In the terminal, run 'cupp -i'. '-I' is used to start interactive mode.
 We can see in the left screen the info that we will need to fill in the gaps.
 In the 'First Name' enter Hernandez.
