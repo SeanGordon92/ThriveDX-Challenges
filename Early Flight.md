@@ -20,6 +20,6 @@ Press enter and let the page load. <br>
 After it loads you should get a 'An error occurred' message with the flag<br>
 
 <details> 
-        <summary>GeeksforGeeks</summary> 
-          <img align="center" src="Images/Early_Flight_01">
+        <summary>Hidden Flag</summary> 
+          <img align="center" src="Images/Early_Flight_01.png">
     </details>
