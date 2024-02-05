@@ -1,4 +1,4 @@
-![image](https://github.com/SeanGordon92/ThriveDX-Challenges/assets/60423498/5fa92f48-5ae8-437d-b36f-df504e7f0272)# I Am Listening
+# I Am Listening
 ## Challenge Description:
 A couple of days ago, a guy claiming to be a network tech came to our colleague and said he had to review his network configuration. Since then, your colleague complained about abnormal behavior in this system.<br>
 At first, he thought it was merely his lack of experience with Ubuntu. However, soon enough, he began suspecting the issue had something to do with the supposed network technician. <br>
