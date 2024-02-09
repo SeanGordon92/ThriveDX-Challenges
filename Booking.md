@@ -12,6 +12,7 @@ According to her, they noticed several logins to their admin accounts at late ho
 
 
 ## Process:
+<img align="center" src="Images/Booking_01.png">
 Create an account. The credentials don't matter all that much, just remember them.<br>
 After creating an account, sign in and go to 'My Moose'.<br>
 Scroll down to the 'Contact Us' section.<br>
