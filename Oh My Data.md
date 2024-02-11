@@ -34,13 +34,27 @@ This will reveal a list of leaked email accounts and their passwords.<br>
   <img src="Images/OhMyData_04.png"/>
 </kbd> 
 <br><br>
-Download th
+Download the text file. I would suggest renaming it to something more coherent.<br>
+Another suggestion is to replace the " -- " to ":" with all emails and passwords just to prevent any typos from interfering with Hydra's command. <br> 
 <br><kbd align="center">
   <img src="Images/OhMyData_05.png"/>
 </kbd> 
 <br><br>
-We will download this as a txt file. Edit the text file with 'nano' and replace all "--" with ":", so it will be more compatible with Hydra.<br>
+Finally, we will use Hydra to brute-force all the leaked emails and passwords to find at least one that wasn't disabled and can still access the site<br>
+<details> 
+        <summary>The Hydra command</summary> 
+          <kbd align="center">
+            <h3>hydra -C list.txt cybernt-labs.com -s 443 https-post-form "/api/login:email=^USER^&pass=^PASS^:your account has been disabled" -V</h3><br>
+</kbd> 
+    </details>
+<br><kbd align="center">
+  <img src="Images/OhMyData_06.png"/>
+</kbd> <br>
+Now that we found the still valid user, we just need to return to the site, enter the correct credentials, and we will find our flag.<br>
 
-Finally, we will use Hydra to brute-force all the users to find at least one that wasn't disabled and can still access the site<br>
-
-hydra -C list.txt cybernt-labs.com -s 443 https-post-form "/api/login:email=^USER^&pass=^PASS^:your account has been disabled" -V<br>
+<details> 
+        <summary>The hidden flag</summary> 
+          <kbd align="center">
+  <img src="Images/OhMyData_07.png"/>
+</kbd> 
+    </details>
