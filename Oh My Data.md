@@ -10,6 +10,9 @@ To be on the safe side, they hired you, a cybersecurity specialist, to verify th
 ☛ Use OSINT to locate the leaked credentials.<br>
 ☛ Determine if any account is still compromised.<br>
 
+[![Oh My Data intro video]()](https://github.com/SeanGordon92/ThriveDX-Challenges/blob/main/Images/OhMyDataIntro.mp4?raw=true "Oh My Data Intro")
+
+
 ## Process:
 When we start the machine we will be presented with this desktop, with this site already open
 <br>
