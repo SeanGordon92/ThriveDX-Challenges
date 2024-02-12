@@ -4,7 +4,7 @@ Jules, a cyber researcher, left his office on his way to a new job. At his farew
 After his farewell party, you approach him and ask "What is the secret of your success?" Jules laughed and promised that the next day the answer would be on your desktop.<br>
 The next day you discover a file on your desktop with a note that says "Always keep this in your memory".<br>
 
-#### Your goals are:<br>
+#### Your goals are:
 ☛ You are provided with the user and password 'derrek:r3s3arch3r' to reconnect if needed.<br>
 ☛ Inspect the dump file to find clues for unlocking the archive file.<br>
 ☛ Analyze & Investigate the DOCX file.<br>
