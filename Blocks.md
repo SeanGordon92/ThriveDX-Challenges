@@ -9,10 +9,12 @@ Upon applying, a bot of the Acipher careers system sent you an email with a chal
 ☛ Open the message.txt file using the code editor and decrypt the content.<br>
 
 ## Process:
-This is the original 'encryptor.py'
-<kbd align="center">
-</kbd> 
 
-- [encryptor.py](https://github.com/SeanGordon92/ThriveDX-Challenges/blob/main/Resources/encryptor.py)
-- [message.txt](https://github.com/SeanGordon92/ThriveDX-Challenges/blob/main/Resources/message.txt)
+The original script<br>
+- [encryptor.py](https://github.com/SeanGordon92/ThriveDX-Challenges/blob/main/Resources/encryptor.py)<br><br>
+
+The txt file we need to decrypt
+- [message.txt](https://github.com/SeanGordon92/ThriveDX-Challenges/blob/main/Resources/message.txt)<br><br>
+
+This is the completed reverse engineered scripts that will decrypt the txt file and print the flag.
 - [blocksSol.py](https://github.com/SeanGordon92/ThriveDX-Challenges/blob/main/Resources/blocksSol.py)
