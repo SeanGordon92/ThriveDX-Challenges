@@ -24,16 +24,19 @@ Use 'sekurlsa::minidump C:\Users\User\Desktop\mimikatz-master\x64\oshri.DMP' to 
 #### sekurIsa:.Iogonpasswords 
 
 <details> 
-        <summary>The NTLM hash is our goal</summary> 
+        <summary>The NTLM hash</summary> 
           722b6a1fc17c46ca1b771f6dd502d7a1
     </details><br>
 
 Create a txt file with the NTLM hash in a kali machine<br>
 Use the command 'john --format=NT --wordlist=/usr/share/wordlists/rockyou.txt  hash.txt' to brute-force the hash<br>
 
-<img align="center" src="Images/DearLSASS_02.png"><br>
-"qweasdqweasd" is the password we were looking for
 
+<details> 
+        <summary>The password we were looking for</summary>
+        <img align="center" src="Images/DearLSASS_02.png"><br>
+"qweasdqweasd"
+    </details><br>
 Convert the password through an MD5 converter and you found the hash
 
 <details> 
