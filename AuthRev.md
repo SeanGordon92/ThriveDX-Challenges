@@ -42,22 +42,22 @@ We have several options:
 
 I will present to you both the python script and the manual steps to solve this. <br>
 ##### Manual 
-We will see that the phrasse has at most 11 characters, meaning it is a string of 12 characters. <br>
-The phrase is constructed from certain conditions, either that can be solved directly or by looping iterations. <br>
+We will see that the phrase is constructed from a string of up to 11 characters, meaning it is a string of 12 characters. <br>
+The phrase is set up with certain conditions, either that can be solved directly or by looping iterations back and forth. <br>
 <details>
           <summary>Steps</summary>
-1. First character 'N': (c[0] = 'N') (Direct condition from Java code). <br>
-2. Second character 'i': (c[1] = c[0] + 27) (Direct condition, 'N' + 27 = 'i'). <br>
-3. Third character 'k': (c[2] > c[1] + 1) (Loop condition, 'k' > 'i' + 1). <br>
-4. Fourth character 'i': (c[3] = c[1]) (Direct condition, 'i'). <br>
-5. Fifth character 't': (c[4] = c[1] + (frac{(c[0] - 1)})/{7}) (Direct condition, 'i' + ('N' - 1)/7 = 't'). <br>
-6. Sixth character 'a': (c[5] < 'b' && c[5] > '`') (Loop condition, 'a' < 'b' and 'a' > '`'). <br>
-7. Seventh character 'K': (c[6] = c[0] - 3) (Direct condition, 'N' - 3 = 'K'). <br>
-8. Eighth character 'u': (c[7] = c[4] + 1) (Direct condition, 't' + 1 = 'u'). <br>
-9. Ninth character 'r': (c[8] = c[7] - 3) (Direct condition, 'u' - 3 = 'r'). <br>
-10. Tenth character 't': (c[9] = c[4]) (Direct condition, 't'). <br>
-11. Eleventh character 'i': (c[10] = c[6] + (frac{c[11]}/{11} times 3) (Loop condition, 'K' + ('n' / 11 * 3)). <br>
-12. Twelfth character 'n': (c[11] > c[0] + 31) (Loop condition, 'n' > 'N' + 31). <br>
+1. First character 'N': (c[0] = 'N') (Direct, simple as that). <br>
+2. Second character 'i': (c[1] = c[0] + 27) (Direct, 'N' + 27 = 'i'). <br>
+3. Third character 'k': (c[2] > c[1] + 1) (Loop, 'k' > 'i' + 1). <br>
+4. Fourth character 'i': (c[3] = c[1]) (Direct, 'i'). <br>
+5. Fifth character 't': (c[4] = c[1] + (frac{(c[0] - 1)})/{7}) (Direct, 'i' + ('N' - 1)/7 = 't'). <br>
+6. Sixth character 'a': (c[5] < 'b' && c[5] > '`') (Loop, 'a' < 'b' and 'a' > '`'). <br>
+7. Seventh character 'K': (c[6] = c[0] - 3) (Direct, 'N' - 3 = 'K'). <br>
+8. Eighth character 'u': (c[7] = c[4] + 1) (Direct, 't' + 1 = 'u'). <br>
+9. Ninth character 'r': (c[8] = c[7] - 3) (Direct, 'u' - 3 = 'r'). <br>
+10. Tenth character 't': (c[9] = c[4]) (Direct, 't'). <br>
+11. Eleventh character 'i': (c[10] = c[6] + (frac{c[11]}/{11} times 3) (Loop, 'K' + ('n' / 11 * 3)). <br>
+12. Twelfth character 'n': (c[11] > c[0] + 31) (Loop, 'n' > 'N' + 31). <br>
 </details>  
 
 ##### Python script
