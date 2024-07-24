@@ -1,11 +1,11 @@
 # AuthRev
-#### Java, reverse engineering
+#### Java, python, reverse engineering
 ## Challenge Description:
 In the Reverse Universe, even reverse engineering is reversed. The troll-faced meme died years ago. <br>
 ﻿His code legacy was hidden in the Reverse Universe. The code contains divine memes that have never been seen before.<br>
 
 Your goals<br>
-☛Find the troll's login info to set the divine memes free!
+☛ Find the troll's login info to set the divine memes free!
 
 ## Process:
 When we download the file we can see that it is a '.CLASS' file, meaning Java. <br>
