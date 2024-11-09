@@ -19,7 +19,7 @@ Login with the given credentials. <br>
 We will need to add the relevant rules for this challenge. They can be found in '/etc/snort/rules/local.rules' 
 <br>
 <kbd align="center">
-  <img src="Images/Pigs_Rules_01.png"/>
+  <img src="Images/Pigs_Rules_0.png"/>
 </kbd> 
 <br><br>
 Let's run 'netstat -a'.<br>
@@ -27,17 +27,27 @@ Now we will start running 'sudo tcpdump' and start filtering out all the legitim
 We'll use the command "sudo tcpdump port not '(8443 or 22 or 80 or 3306)' -n"<br>
 <br>
 <kbd align="center">
-  <img src="Images/Pigs_Rules_02.png"/>
+  <img src="Images/Pigs_Rules_0.png"/>
 </kbd> 
 
 Let's modify it to "sudo tcpdump port not '(8443 or 22 or 80 or 3306)' -n | grep 1024" to show all ports that contain the 1024 size
 We will notice that port 36730 repeats itself over and over again.
 <br>
 <kbd align="center">
-  <img src="Images/Pigs_Rules_03.png"/>
+  <img src="Images/Pigs_Rules_.png"/>
 </kbd> 
 <br>
 Now let's edit the Snort rules in order to filter what we need. <br>
 Use 'nano /etc/snort/rules/local.rules' to access the rules file for Snort. <br>
 'alert tcp any any -> any any (msg:"TCP Windows size is 1024"; sid:1000001; window:1024;)'
-
+<br>
+<kbd align="center">
+  <img src="Images/Pigs_Rules_0.png"/>
+</kbd> 
+<br>
+And now we'll run the following command
+<br>
+<kbd align="center">
+  <img src="Images/Pigs_Rules_.png"/>
+</kbd> 
+<br>
