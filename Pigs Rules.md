@@ -40,8 +40,4 @@ We will notice that port 36730 repeats itself over and over again.
 Now let's edit the Snort rules in order to filter what we need. <br>
 Use 'nano /etc/snort/rules/local.rules' to access the rules file for Snort. <br>
 'alert tcp any any -> any any (msg:"TCP Windows size is 1024"; sid:1000001; window:1024;)'
-<br>
-<kbd align="center">
-  <img src="Images/Pigs_Rules_04.png"/>
-</kbd> 
-<br>
+
