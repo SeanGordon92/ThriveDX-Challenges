@@ -65,7 +65,7 @@ The flag should appear in the 'Sensors' tab, but there is currently an issue tha
             <summary>Did you find the flag yourself?</summary> 
           <details> 
             <summary>I sure hope you did</summary> 
-          I will upload the flag tomorrow
+                1fdcf70d937c1d1796a53fb4fdb9e79c
     </details><br>
     </details><br>
     </details><br>
