@@ -6,8 +6,6 @@
 As a SOC analyst in the "Flying Piglet" post office, you gained intel about Hacktivists throughout the globe who plan to launch a hacking campaign against your country.<br>
 To stay ahead, you are required to sniff the ongoing incoming traffic, identify the malicious traffic, and configure Snort IDS rules accordingly.<br>
 The rules must not capture any legitimate traffic.<br>
-Your goals:
-
 
 #### Your goals<br>
 ☛ You are provided with the user and password 'snortoinko1nk" to reconnect if needed. Snorby Credentials:snorby@example.com:snorby<br>
